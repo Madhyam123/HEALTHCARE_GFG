@@ -12,7 +12,7 @@ const Navbar = () => {
         }
         const handleClose = () => setNav(!nav)
         return (
-            <div className='w-screen h-[80px] dark:bg-black bg-zinc-200 fixed drop-shadow-lg z-10 '>
+            <div className='w-screen h-[80px] dark:bg-black bg-zinc-200 fixed drop-shadow-lg z-5 '>
                 <div className='flex items-center justify-between w-full h-full px-2'>
                     <div className='flex items-center'>
                         <h1 className='mr-4 text-3xl font-bold sm:text-4xl dark:text-white'>BRAND.</h1>
