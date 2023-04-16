@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import jwt_decode from "jwt-decode";
+/* import jwt_decode from "jwt-decode"; */
+import Bmi from "./components/Bmi";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,10 +11,14 @@ import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import Forms from './components/Forms';
 import Stattics from './components/Stattics';
-import Company from './components/Company';
+import Register from './components/Register';
 import Chatbot from './components/Chatbot';
+import "./App.css";
 function App() {
+  const [buttonPopup , setButtonPopup] = useState(false);
+   /* 
   const [user,SetUser] = useState({});
+  
   function handleCallbackResponse(response){
     console.log("Encoded JWT ID Token:"+response.credential);
     var userObject=jwt_decode(response.credential);
@@ -35,39 +40,50 @@ function App() {
       {theme:"outline",size:"large"}
     );
     window.google.accounts.id.prompt();
-  },[]);
+  },[]); */
   return (
     <div className='dark:bg-black'>
-      <div id='signInDiv'></div>
+     {/*  <div id='signInDiv'></div>
       {Object.keys(user).length!==0 &&
         <button className='p-6 text-white bg-green-500' onClick={(e)=>handleSignOut(e)}>Signout</button>
         
-      }
+      } 
       {user &&
       <div>
         <img src={user.picture} alt="" />
         <h3 className='text-blue-700'>{user.name}</h3>
       </div>
-      }
+      } */}                     
       <Router>
-        <Navbar />
+       <Navbar/>
         <Switch>
           <Route exact path='/'>
+         
+
+        <button onClick={()=>{setButtonPopup(true)}} id="btnBmi" className="px-2 py-2 bg-red-400 border-none" >Bmi</button>
+
             <Hero />
             <Chatbot />
+           
+            <Bmi trigger={buttonPopup} setTrigger= {setButtonPopup}/>
             <About />
+            
             <Support />
             <AllInOne />
             <Pricing />
+            
+
           </Route>
           <Route  exact path='/forms'>
           <Forms />
           </Route>
+     
+      
           <Route exact path ='/Stattics'>
             <Stattics />
           </Route>
-          <Route exact path = '/Company'>
-            <Company />
+          <Route exact path = '/Register'>
+            <Register />
           </Route>
         </Switch>
 
@@ -77,4 +93,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
