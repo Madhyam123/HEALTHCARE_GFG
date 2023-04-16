@@ -25,7 +25,7 @@ const Visvalization = () => {
   return (
     <div>
         <h1 className='flex items-center justify-center text-purple-500 text-4xl'>Patient's Report History</h1>
-    <div className='grid grid-cols-3 gap-4'
+    <div className='grid grid-cols-3 gap-4 -z-10'
     >
         <Chart
               options={state.options}
