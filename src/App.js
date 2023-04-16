@@ -9,7 +9,7 @@ import Support from './components/Support';
 import AllInOne from './components/AllInOne';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
-
+import Visvalization from './components/Visualization';
 import Stattics from './components/Stattics';
 import Register from './components/Register';
 import Chatbot from './components/Chatbot';
@@ -77,6 +77,7 @@ function App() {
       
           <Route exact path ='/Stattics'>
             <Stattics />
+            <Visvalization/>
           </Route>
           <Route exact path = '/Register'>
             <Register />
