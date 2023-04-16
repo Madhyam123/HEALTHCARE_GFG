@@ -9,7 +9,7 @@ import Support from './components/Support';
 import AllInOne from './components/AllInOne';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
-import Forms from './components/Forms';
+
 import Stattics from './components/Stattics';
 import Register from './components/Register';
 import Chatbot from './components/Chatbot';
@@ -58,8 +58,7 @@ function App() {
        <Navbar/>
         <Switch>
           <Route exact path='/'>
-         
-
+  
         <button onClick={()=>{setButtonPopup(true)}} id="btnBmi" className="px-2 py-2 bg-red-400 border-none" >Bmi</button>
 
             <Hero />
@@ -74,10 +73,7 @@ function App() {
             
 
           </Route>
-          <Route  exact path='/forms'>
-          <Forms />
-          </Route>
-     
+      
       
           <Route exact path ='/Stattics'>
             <Stattics />
