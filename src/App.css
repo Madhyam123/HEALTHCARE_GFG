@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+#btnBmi{
+  display: flex;
+  flex-direction: column;
+  top: 6%;
+  left: 45%;
+  transform:translate(-50%, -50%);
+  position: fixed;
+
+}
