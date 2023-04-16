@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white'>
-        <p className='py-4 text-3xl hover:text-violet-500 dark:text-white'>Made with &#10084; AI&DS GROUP 2</p>
+        <p className='py-4 text-3xl hover:text-violet-500 dark:text-white'>Made with &#10084; BUG FIXER GROUP</p>
         <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
             <FaFacebook className='hover:text-blue-300' />
             <FaInstagram className='hover:text-pink-400' />
