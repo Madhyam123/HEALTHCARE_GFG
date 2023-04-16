@@ -1,0 +1,44 @@
+.wrapper{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 60%;
+        transform:translate(-10%, -60%);
+        padding: 15px;
+        margin-top: 40px;
+        margin-left: 10rem;
+        background: black;
+        border-radius: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+    }
+
+    .close-btn{
+        width: 20%;
+        position: absolute;
+        right: 8%;
+        top:4%
+    }
+
+    input{
+        margin-top: 10px;
+        outline: none;
+        border: none;
+        padding: 5px;
+    }
+
+
+    #btn{
+        color: white;
+        padding: 10px;
+        border: 2px solid white;
+        background: black;
+        display: block;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+
+    .wrapper p, span{
+        color:white;
+    }
